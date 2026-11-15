@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hannah Oh – Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name: projects, skills and contact details.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+  <style>
+    :root {
+      --bg: #f6f7f4;
+      --surface: #ffffff;
+      --text: #1c2321;
+      --muted: #5b6662;
+      --line: #d9ddd8;
+      --accent: #1f6f5c;
+      --accent-text: #ffffff;
+      --font: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14191a;
+        --surface: #1c2325;
+        --text: #e8ece9;
+        --muted: #9aa6a1;
+        --line: #2f393b;
+        --accent: #6fd0b4;
+        --accent-text: #0f1a17;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 1.125rem;
+      line-height: 1.65;
+    }
+    a { color: var(--accent); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
 
+    header.site {
+      border-bottom: 1px solid var(--line);
+      font-family: var(--font-ui);
+      font-size: 0.95rem;
+    }
+    header.site .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; padding-bottom: 1rem; flex-wrap: wrap; gap: .5rem; }
+    header.site strong { font-weight: 650; }
+    nav a { margin-left: 1.25rem; color: var(--muted); text-decoration: none; }
+    nav a:hover { color: var(--text); text-decoration: underline; }
+
+    .hero { padding: 5rem 0 4rem; }
+    .hero h1 {
+      font-size: clamp(2.4rem, 7vw, 4.2rem);
+      line-height: 1.08;
+      margin: 0 0 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      max-width: 16ch;
+    }
+    .hero p { max-width: 56ch; color: var(--muted); margin: 0 0 2rem; }
+    .btn {
+      display: inline-block;
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      padding: .7rem 1.25rem;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px solid var(--accent);
+      margin-right: .5rem;
+    }
+    .btn.primary { background: var(--accent); color: var(--accent-text); }
+    .btn.secondary { color: var(--accent); }
+
+    section { padding: 3rem 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 1.6rem; margin: 0 0 1.5rem; font-weight: 600; }
+
+    .projects { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .project {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .project h3 { margin: 0 0 .5rem; font-size: 1.2rem; }
+    .project p { margin: 0 0 1rem; font-size: 1rem; color: var(--muted); flex: 1; }
+    .tags { font-family: var(--font-ui); font-size: .82rem; color: var(--muted); margin-bottom: 1rem; }
+    .links { font-family: var(--font-ui); font-size: .95rem; display: flex; gap: 1rem; }
+
+    .skills { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem; font-family: var(--font-ui); font-size: .95rem; }
+    .skills li { border: 1px solid var(--line); background: var(--surface); padding: .3rem .8rem; border-radius: 999px; }
+
+    footer { border-top: 1px solid var(--line); padding: 2rem 0 3rem; font-family: var(--font-ui); font-size: .9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <strong>Your Name</strong>
+      <nav aria-label="Main">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <div class="hero">
+        <h1>Reasoning about programs in the age of AI</h1>
+        <p>Hi, I’m Hannah Oh, a PhD student based in Brighton, the United Kingdom. I am passionate about helping shape the future of education through the responsible use of AI.</p>
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn secondary" href="#contact">Get in touch</a>
+      </div>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <h3>Project one</h3>
+            <p>TBC</p>
+            <div class="tags">TBC</div>
+            <div class="links">
+              <a href="https://github.com/TBC">Source code</a>
+              <a href="https://your-username.github.io/project-one">Live demo</a>
+            </div>
+          </article>
+          <article class="project">
+            <h3>Project two</h3>
+            <p>TBC</p>
+            <div class="tags">Python, Flask, SQLite</div>
+            <div class="links">
+              <a href="https://github.com/your-username/project-two">Source code</a>
+            </div>
+          </article>
+          <article class="project">
+            <h3>Project three</h3>
+            <p>Explain your role if it was a team project, and what you personally built.</p>
+            <div class="tags">HTML, CSS, TypeScript</div>
+            <div class="links">
+              <a href="https://github.com/your-username/project-three">Source code</a>
+              <a href="https://example.com">Live demo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About me</h2>
+        <p>Write two or three short paragraphs here: where you studied or trained, what you’ve worked on, and what you’re looking for next. Add something personal, such as a hobby, so people remember you.</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Python</li>
+          <li>Git &amp; GitHub</li>
+          <li>SQL</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Open to new roles and freelance work. The quickest way to reach me is by email.</p>
+        <p>
+          <a class="btn primary" href="mailto:you@example.com">Email me</a>
+          <a class="btn secondary" href="https://github.com/your-username">GitHub</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/your-username">LinkedIn</a>
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year">2026</span> Your Name. Hosted on GitHub Pages.</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
